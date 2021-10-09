@@ -1,0 +1,30 @@
+body {
+  background: black;
+  color: white;
+}
+
+div {
+  text-align: center;
+  display: block;
+}
+
+img {
+  max-width: 5rem;
+}
+
+select {
+  margin-left: 1rem;
+}
+
+.selectform {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+
+  max-width: 20rem;
+}
+
+.selectform .selectdiv {
+  display: flex;
+  justify-content: space-between;
+}
