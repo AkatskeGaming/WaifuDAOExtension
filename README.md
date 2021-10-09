@@ -22,3 +22,6 @@ Hey! Sorry to bother you, have you heard about Waifu DAO Gaming Guild on Solana?
 This project looks awesome! They've got a full Roadmap on their Discord if you want to check it out
 
 https://discord.gg/bWhw2zhvDY
+
+If you like this extension consider tipping SOL at the following address:
+KrxpvqKbU5XL2dTUgLURjYcvULyrRxjHJR5b1Cx8thR
