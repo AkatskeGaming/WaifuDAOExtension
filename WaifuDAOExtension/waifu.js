@@ -9,6 +9,8 @@ let selectOutfit = document.getElementById("selectOutfit")
 let selectSkin = document.getElementById("selectSkin")
 let selectBackground = document.getElementById("selectBackground")
 
+
+// Calculate and display the Waifu Rarity and Rating upon button click.
 submitButton.addEventListener("click", async () => {
 
   const discriminant = calculateDiscriminant(
@@ -30,6 +32,7 @@ submitButton.addEventListener("click", async () => {
   ratingSpan.classList.add('rarity-' + rating)
 })
 
+// Populate each select field with the option values.
 createTraitSelect(selectShades, Dictionary["Shades"])
 createTraitSelect(selectHair, Dictionary["Hair"])
 createTraitSelect(selectEyes, Dictionary["Eyes"])
