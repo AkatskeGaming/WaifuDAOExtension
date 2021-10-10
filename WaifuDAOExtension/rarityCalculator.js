@@ -1,3 +1,8 @@
+/**
+ * Waifu Trait Dictionary with all the rarirty rates according 
+ * to the drop rates defined on discord. The names need to match
+ * exactly as to the actual traits owned by each NFT.
+ */
 const Dictionary = {
   Shades: [
     {value: 99, text: "No Shades"},
@@ -5,7 +10,7 @@ const Dictionary = {
     {value: 0.25, text: "Sunset Vipers"}
   ], 
   Hair: [
-    {value: 11, text: "Blonde Deviant"},
+    {value: 11, text: "Blonde Deviant"}, 
     {value: 11, text: "Blue Solana Cap"},
     {value: 6, text: "Orange Pirate"},
     {value: 6, text: "Purple Pirate"},
@@ -75,16 +80,28 @@ const Dictionary = {
   ]
 }
 
+/**
+ * Create a list of option elements to be fed into the passed in select fields.
+ * Each option will have the Trait text as label and Trait value as its value.
+ *
+ * @param {object} element - A select element to append options to.
+ * @param {object} traits - The specific trait array from the dictionary to add as options.
+ */
 function createTraitSelect(element, traits) {
-  for(var i = 0; i < traits.length; i++) {
-      var opt = traits[i]
-      var el = document.createElement("option")
-      el.textContent = opt.text
-      el.value = opt.value
-      element.appendChild(el)
-  }
+  traits.forEach(trait => {
+    let option = document.createElement("option")
+    option.textContent = trait.text
+    option.value = trait.value
+    element.appendChild(option)
+  })
 }
 
+/**
+ * Use the discriminant formula to calculate the rarirty of each Waifu.
+ * Each trait's drop rate is passed in and used in the final calculation.
+ * 
+ * @return {number} The discriminant value for the Waifu based on the sum of entered traits.
+ */
 function calculateDiscriminant(shades, hair, mouth, 
   eyes, outfit, skin, background) {
 
@@ -101,11 +118,26 @@ function calculateDiscriminant(shades, hair, mouth,
   return discriminant
 }
 
-
+/**
+ * Calculate the final rarity based on the discriminant passed in.
+ * This step is done to make the result more user friendly.
+ * 
+ * @param {number} discriminant - The discriminant value for the Waifu based on the sum of entered traits.
+ * 
+ * @return {number} The final rarity score for the Waifu, higher is better.
+ */
 function calculateRarity(discriminant) {
   return Math.round((1/discriminant/10000) - (82/1000)+15)
 }
 
+
+/**
+ * Determine the rating of a waifu based on her rarity, the ratings are terms most gamers are familiar with.
+ * 
+ * @param {number} rarity - The final rarity score for the Waifu, higher is better.
+ * 
+ * @return {number} Rating based on rarity score, the higher the number the more rare and thus better ranking. 
+ */
 function getRating(rarity) {
   let rating = "undefined"
 
