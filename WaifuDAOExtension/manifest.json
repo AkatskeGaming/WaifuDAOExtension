@@ -12,7 +12,6 @@
     "css": ["rarity.css"],
     "run_at": "document_end"
   }],
-  "permissions": ["scripting"],
   "action": {
     "default_popup": "waifu.html",
     "default_icon": {
