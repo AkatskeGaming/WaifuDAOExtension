@@ -1,7 +1,7 @@
 {
   "name": "WaifuDAOExtension",
   "description": "This extension is mainly aimed at providing an automatic Rarity calculator for Digital Eyes Marketplace.",
-  "version": "1.0",
+  "version": "1.0.0",
   "manifest_version": 3,
   "content_scripts": [{
     "matches": ["*://*.digitaleyes.market/collections/Waifu%20DAO%20Gaming%20Guild*"],
