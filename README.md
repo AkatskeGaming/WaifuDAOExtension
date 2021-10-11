@@ -1,9 +1,9 @@
 # WaifuDAOExtension
 This is a Chrome extension that is mainly aimed at providing an automatic Rarity calculator for Digital Eyes Marketplace.
 
-This extension is both a rarity calculator and a rarity overlay for the DigitalEyes WAIFU DAO GAMING GUILD Marketplace. 
+This extension is both a rarity calculator and a rarity overlay for the DigitalEyes WAIFU DAO GAMING GUILD Marketplace.
 
-Simply browse listings with the extension enabled and the rarity of each listed while will be automatically added to the listings on screen. 
+Simply browse listings with the extension enabled and the rarity of each listed waifu will be automatically added to the listings on screen.
 
 You can also click on the extension icon to bring up the rarity calculator to calculate the rarity of any Waifu trait combination you want.
 
