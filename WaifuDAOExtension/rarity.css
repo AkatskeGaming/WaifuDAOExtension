@@ -25,4 +25,33 @@
 .rarity-Mythic {
   color: yellow !important;
   font-size: .9rem !important;
+}
+
+.rarity-me-Common {
+  font-size: 0.85rem !important;
+}
+
+.rarity-me-Uncommon {
+  color: green !important;
+  font-size: 0.85rem !important;
+}
+
+.rarity-me-Rare {
+  color: cyan !important;
+  font-size: 0.9rem !important;
+}
+
+.rarity-me-Epic {
+  color: purple !important;
+  font-size: 0.9rem !important;
+}
+
+.rarity-me-Legendary {
+  color: orange !important;
+  font-size: 0.95rem !important;
+}
+
+.rarity-me-Mythic {
+  color: yellow !important;
+  font-size: 0.95rem !important;
 } 
