@@ -1,13 +1,30 @@
 {
+  "author": "Akatske",
   "name": "WaifuDAOExtension",
   "description": "This extension is mainly aimed at providing an automatic Rarity calculator for Digital Eyes Marketplace.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "manifest_version": 3,
   "content_scripts": [{
-    "matches": ["*://*.digitaleyes.market/collections/Waifu%20DAO%20Gaming%20Guild*"],
+    "matches": [
+      "*://*.digitaleyes.market/collections/Waifu%20DAO%20Gaming%20Guild*",
+      "*://*.digitaleyes.market/wallet*"
+    ],
     "js": [
       "rarityCalculator.js",
-      "digitalEyesRarity.js"
+      "digitalEyesRarity.js",
+      "waifuData.js"
+    ],
+    "css": ["rarity.css"],
+    "run_at": "document_end"
+  }, {
+    "matches": [
+      "*://*.magiceden.io/marketplace/waifu_dao_gaming_guild*",
+      "*://*.magiceden.io/me?tab=my-items*"
+    ],
+    "js": [
+      "rarityCalculator.js",
+      "magicEdenRarity.js",
+      "waifuData.js"
     ],
     "css": ["rarity.css"],
     "run_at": "document_end"
